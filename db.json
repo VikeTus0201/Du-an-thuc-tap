@@ -1,4 +1,56 @@
 {
-  "listCourse":[],
-  "users":[]
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "admin",
+      "createdAt": "2025-06-02T10:00:00.000Z"
+    },
+    {
+      "email": "tienddph50842@gmail.com",
+      "password": "$2a$10$Y/pScvtU1rQxrCQ004IuO.It9MY6Px8jShDOCv7XNcNOfYig74KaO",
+      "role": "admin",
+      "id": 2
+    },
+    {
+      "email": "tien1@gmail.com",
+      "password": "$2a$10$SUq6SlF0NkSjNk/TATlin.KVOPuog9cNIUYMMv5M2bgbNDXDXN6hi",
+      "role": "student",
+      "id": 3
+    }
+  ],
+  "listCourse": [],
+  "userProfiles": [
+    {
+      "id": 1,
+      "userId": 1,
+      "fullName": "Quản trị viên",
+      "avatar": "",
+      "phone": "",
+      "dateOfBirth": "",
+      "address": "",
+      "bio": "Tài khoản quản trị viên hệ thống"
+    },
+    {
+      "userId": 2,
+      "fullName": "đặng duy tiến ",
+      "avatar": "",
+      "phone": "",
+      "dateOfBirth": "",
+      "address": "",
+      "bio": "",
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "fullName": "đặng duy tiến ",
+      "avatar": "",
+      "phone": "",
+      "dateOfBirth": "",
+      "address": "",
+      "bio": "",
+      "id": 3
+    }
+  ]
 }
