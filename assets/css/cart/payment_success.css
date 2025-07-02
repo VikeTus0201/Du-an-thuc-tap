@@ -1,0 +1,51 @@
+/* Đặt kiểu dáng cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    /* Đảm bảo trang hoạt động tốt trên màn hình nhỏ */
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #000080;
+    /* Màu xanh lá cho cảm giác thành công */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #333;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #003b7f;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #000080;
+}

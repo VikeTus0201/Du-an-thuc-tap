@@ -1,0 +1,35 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F2F2F2;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: white;
+}
+
+.logo {
+    font-family: 'Montserrat Alternates', sans-serif !important;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.logo .highlight {
+    color: #000080;
+}

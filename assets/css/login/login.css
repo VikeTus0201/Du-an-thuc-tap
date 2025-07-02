@@ -1,0 +1,144 @@
+/* Tổng thể */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+/* background-color: #f5f5f5; */
+max-width: 1200px;
+margin: auto;
+}
+
+.container {
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+/* Reset */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F2F2F2;
+    max-width: 1200px;
+    margin: auto;
+} */
+
+/* Header */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: white;
+}
+
+.logo {
+    font-family: 'Montserrat Alternates', sans-serif !important;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.logo .highlight {
+    color: #000080;
+}
+
+
+/* Main */
+main {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 70vh;
+background: linear-gradient(to bottom, #ddd, #fff);
+}
+
+.login-section {
+display: flex;
+align-items: center;
+background-color: #fff;
+padding: 20px;
+
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+width: 300px;
+height: auto;
+margin-right: 20px;
+}
+
+.login-form {
+max-width: 300px;
+width: 100%;
+}
+
+.login-form h2 {
+margin-bottom: 20px;
+color: #000;
+}
+
+.login-form label {
+font-size: 14px;
+display: block;
+margin: 10px 0 5px;
+}
+
+.login-form input {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+/* border-radius: 4px; */
+}
+
+.login-button {
+width: 100%;
+padding: 10px;
+background-color: #000;
+color: #fff;
+border: none;
+/* border-radius: 4px; */
+cursor: pointer;
+}
+
+.social-login {
+display: flex;
+justify-content: space-between;
+margin: 10px 0;
+}
+
+.social-login button {
+flex: 1;
+padding: 10px;
+margin: 0 5px;
+border: none;
+/* border-radius: 4px; */
+cursor: pointer;
+}
+
+.facebook-login {
+background-color: #4267B2;
+color: #fff;
+}
+
+.google-login {
+background-color: #DB4437;
+color: #fff;
+}
+
+.forgot-link {
+display: block;
+text-align: center;
+color: #555;
+text-decoration: none;
+font-size: 12px;
+}

@@ -1,0 +1,124 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Container chung */
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #c7c7c7;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    /* background-color: var(--primary-color); */
+    /* color: var(--btn-text-color); */
+}
+
+/* Dòng và cột */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    /* Khoảng cách giữa các cột */
+}
+
+.col {
+    flex: 1 1 calc(25% - 15px);
+    /* Tự động căn đều 4 cột với khoảng cách */
+    min-width: 200px;
+    /* Chiều rộng tối thiểu */
+}
+
+.footer-logo {
+    margin-left: 31px;
+    width: 200px;
+    height: 80px;
+    background-color: white;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Montserrat Alternates', sans-serif !important;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #000080;
+    font-weight: bold;
+}
+
+/* Mạng xã hội */
+.footer-socials a {
+    margin-right: 10px;
+}
+
+.footer-socials img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.footer-socials img:hover {
+    transform: scale(1.1);
+}
+
+/* Bản quyền */
+.footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .col {
+        flex: 1 1 100%;
+        /* Cột chiếm toàn bộ chiều rộng */
+        margin-bottom: 20px;
+    }
+
+    .footer-socials {
+        margin-top: 10px;
+    }
+}

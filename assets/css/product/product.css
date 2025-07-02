@@ -1,0 +1,148 @@
+body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+  }
+
+
+  .container {
+      display: flex;
+      padding: 20px 40px;
+      background-color: rgb(228, 228, 228);
+  }
+
+  .sidebar {
+      width: 200px;
+      margin-right: 20px;
+  }
+
+  .sidebar button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #1a1a1a;
+      color: white;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+  }
+
+  /* .sidebar button.active {
+            background-color: #0033cc;
+        } */
+  .main-content {
+      flex: 1;
+  }
+
+  .filters {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  }
+
+  .filters button,
+  .filters select {
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: white;
+      cursor: pointer;
+  }
+
+  .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+  }
+
+  .product-card {
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ddd;
+      text-align: center;
+  }
+
+  .product-card img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .product-card .name {
+    font-size: 20px;
+      font-weight: 500;
+      margin: 10px 0;
+  }
+
+  .product-card .price {
+      /* color: #0033cc; */
+      font-weight: 500;
+      margin: 10px 0;
+  }
+
+  .product-card .rating i {
+      color: #5563b3;
+  }
+
+/* Style for the brand logos section */
+.brand-logos {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the unordered list */
+.brand-logos ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for each list item */
+.brand-logos ul li {
+    margin-bottom: 10px;
+}
+.brand-logos ul li  a{
+    font-size: 20px;
+}
+
+/* Style for each button (category) */
+.brand-logos button {
+    width: 100%;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    color: #1a1a1a;
+    padding: 12px 20px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for the buttons */
+.brand-logos button:hover {
+    background-color: #8b96bb;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Active button style when selected */
+.brand-logos button.active {
+    background-color: #8b96bb;
+    color: white;
+    font-weight: 600;
+}
+
+/* Link styling within the button */
+.brand-logos button a {
+    padding-left: 50px;
+    text-decoration: none;
+    color: inherit;
+    /* Inherit color from the parent button */
+}
+
+/* Optional: Add some space around the brand logos section */
+.brand-logos {
+    margin-top: 60px;
+}

@@ -1,0 +1,189 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F2F2F2;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0; 
+    background-color: white;
+}
+
+.logo {
+    font-family: 'Montserrat Alternates', sans-serif !important;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.logo .highlight {
+    color: #000080;
+}
+
+.nav {
+    margin-left: -70px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 17px;
+    font-weight: 500;
+    transition: color 0.3s;
+    margin-left: 25px;
+
+}
+
+.nav a:hover {
+    /* color: var(--secondary-color); */
+    font-weight: bold;
+    color: #000080;
+}
+
+/* Icons */
+.icons {
+    /* background-color: #000080; */
+    /* Màu nền xanh navy */
+    width: 100px;
+    /* Chiều rộng cố định */
+    display: flex;
+    /* Kích hoạt Flexbox */
+    justify-content: flex-end;
+    /* Dồn các phần tử về bên phải */
+    gap: 10px;
+    /* Khoảng cách giữa các phần tử (tùy chọn) */
+    padding-right: 10px;
+    /* Tạo khoảng cách với mép bên phải (tùy chọn) */
+}
+.icons a {
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .icons {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+}
+
+                /* Style cho input search */
+                .search-input {
+                    width: 200px;
+                    padding: 5px;
+                    margin-left: 15px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    /* margin-left: 100px; */
+                }
+
+/* Căn chỉnh menu bên dưới biểu tượng profile và di chuyển sang trái */
+.profile-menu {
+    display: none;
+    /* Ẩn menu */
+    position: absolute;
+    /* Để có thể căn chỉnh với phần tử cha */
+    background-color: white;
+    /* Màu nền */
+    border: 1px solid #ccc;
+    /* Viền */
+    padding: 10px;
+    /* Khoảng cách bên trong */
+    width: 150px;
+    /* Chiều rộng menu */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Hiệu ứng đổ bóng */
+    z-index: 1000;
+    /* Đảm bảo menu nằm trên các phần tử khác */
+    top: 100%;
+    /* Đặt menu ngay bên dưới biểu tượng profile */
+    left: -93px;
+    /* Di chuyển menu sang trái (tùy chỉnh giá trị này để điều chỉnh thêm) */
+}
+
+/* Căn chỉnh container */
+.profile-container {
+    position: relative;
+    /* Bố trí các phần tử con dựa trên container */
+}
+
+.profile-container:hover .profile-menu {
+    display: block;
+    /* Hiển thị menu khi di chuột vào container */
+}
+
+/* Tùy chỉnh style của các liên kết trong menu */
+.profile-menu a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.profile-menu a:hover {
+    color: #000080;
+    /* Màu khi hover */
+}
+/* Tùy chỉnh kích thước và vị trí input */
+.search-input {
+    width: 150px;
+    /* Độ rộng của input */
+    height: 30px;
+    /* Chiều cao của input */
+    padding: 5px;
+    /* Khoảng cách bên trong */
+    border: 1px solid #ccc;
+    /* Viền input */
+    border-radius: 3px;
+    /* Bo tròn các góc */
+    margin-right: 5px;
+    /* Khoảng cách giữa input và nút */
+    display: none;
+    /* Ban đầu ẩn input */
+    transition: all 0.3s ease;
+    /* Hiệu ứng khi input hiển thị */
+}
+
+/* Khi input được hiển thị */
+.search-input.show {
+    display: block;
+}

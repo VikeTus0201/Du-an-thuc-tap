@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    
+}
+.container {
+    justify-content: center;
+        /* Căn giữa theo chiều ngang */
+        align-items: center;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.order-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-link {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.tab-link.active {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+
+.order-container {
+    max-width: 1200px;
+    height: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow-y: auto;
+    /* Cho phép cuộn nếu nội dung vượt quá chiều cao */
+    border: 1px solid #ccc;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    /* border-radius: 8px; */
+    background-color: #f9f9f9;
+}
+
+.order {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.order p {
+    margin: 5px 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.order button {
+    background-color: #003b7f;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.order button:hover {
+    background-color: #000080;
+}
+
+.order form {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 15px 0;
+}
+
+/* Modal */
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Màu nền mờ */
+    display: none;
+    /* Ẩn modal mặc định */
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    z-index: 1000;
+    /* Đảm bảo modal luôn hiển thị trên các phần tử khác */
+}
+
+/* Nội dung của modal */
+#modal-content {
+    text-align: center;
+    
+    margin-top: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    padding: 20px;
+    width: 500px;
+    max-width: 90%;
+    /* Đảm bảo modal không quá rộng */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    overflow-y: auto;
+    /* Cuộn nếu nội dung quá dài */
+}
+
+#modal-content ul {
+    list-style: none;
+
+}
+
+/* Nút đóng trong modal */
+#modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #003b7f;
+    cursor: pointer;
+}
+
+/* Khi hover vào nút đóng */
+#modal-content .close:hover {
+    color: #000080;
+}
+
+/* Nút đóng bên ngoài modal */
+#modal button {
+    display: block;
+    margin: 10px auto;
+    background-color: #003b7f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#modal button:hover {
+    background-color: #000080;
+}

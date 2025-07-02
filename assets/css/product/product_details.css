@@ -1,0 +1,167 @@
+/* Đặt phông chữ và cơ bản */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* border-radius: 10px; */
+}
+
+/* Hình ảnh sản phẩm */
+.product-image {
+    /* flex: 1; */
+    text-align: center;
+    /* background-color: #222; */
+    width: 600px;
+}
+
+.product-image img {
+    max-width: 600px;
+    /* height: auto; */
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Thông tin sản phẩm */
+.product-details {
+    flex: 2;
+    padding: 20px;
+}
+
+.product-details h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.product-details .price {
+    font-size: 20px;
+    /* color: #e53935; */
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.product-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Màu sắc */
+.colors h3,
+.sizes h3,
+.stock h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.colors span {
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: border 0.3s ease;
+}
+
+.colors span:hover {
+    border: 2px solid #000080;
+}
+
+/* Kích thước */
+.sizes button {
+    background-color: #fff;
+    color: #444;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.sizes button:hover {
+    background-color: #000080;
+    color: #fff;
+    border-color: #000080;
+}
+
+/* Tồn kho */
+.stock ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stock ul li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Nút hành động */
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons .add-to-cart,
+.buttons .buy-now {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.buttons .add-to-cart {
+    background-color: #000080;
+    color: #fff;
+    border: none;
+   
+}
+
+.buttons .add-to-cart:hover {
+    /* border: solid 2px;
+    border-color: #000080; */
+    transform: scale(1.2);
+    
+}
+
+.buttons .buy-now {
+    background-color: #000080;
+    color: #fff;
+    border: none;
+}
+
+.buttons .buy-now:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .product-details {
+        padding: 10px;
+    }
+
+    .buttons {
+        text-align: center;
+    }
+}

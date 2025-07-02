@@ -1,0 +1,110 @@
+
+/* reset một số thuộc tính mặc định của trình duyệt */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Đặt nền cho toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+
+/* Định dạng tiêu đề trang */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Định dạng nút thêm sản phẩm */
+a button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+a button:hover {
+    background-color: #0056b3;
+}
+
+/* Định dạng bảng */
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #007bff;
+    color: #fff;
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+    padding: 12px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* Định dạng các nút trong bảng */
+td a button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+td a button:hover {
+    background-color: #218838;
+}
+
+td a button.delete {
+    background-color: #dc3545;
+}
+
+td a button.delete:hover {
+    background-color: #c82333;
+}
+
+
+.delete{
+    background-color: red;
+}
