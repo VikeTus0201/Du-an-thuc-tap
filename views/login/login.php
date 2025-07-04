@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prime | Login</title>
-  <link rel="stylesheet" href="http://localhost/Thuctap/Project_thuc_tap/assets/css/login/login.css">
+  <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/login/login.css">
 </head>
 
 <body>

@@ -35,7 +35,7 @@ class UserController
                     if ($user['chuc_vu_id'] == 2) {
                         // var_dump($user); die();
 
-                        header('Location: http://localhost/Thuctap/Project_thuc_tap/');
+                        header('Location: ' . BASE_URL);
                     } else {
                         header('Location: ./?act=login');
                     }
@@ -50,7 +50,7 @@ class UserController
     {
         session_start();
         session_destroy();
-        header('Location: http://localhost/Thuctap/Project_thuc_tap/');
+        header('Location: ' . BASE_URL);
     }
 
 

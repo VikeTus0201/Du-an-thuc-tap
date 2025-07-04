@@ -1,0 +1,194 @@
+/* AI Summary - Minimal Design */
+@import url('../global.css');
+
+.ai-summary-container {
+    background: var(--background-light);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    margin: var(--space-lg) 0;
+    transition: all var(--transition-base);
+}
+
+.ai-summary-container:hover {
+    border-color: var(--secondary-color);
+    box-shadow: var(--shadow-sm);
+}
+
+.ai-summary-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.ai-summary-header h3 {
+    margin: 0;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.ai-icon {
+    width: 18px;
+    height: 18px;
+    color: var(--secondary-color);
+    flex-shrink: 0;
+}
+
+.ai-summary-content {
+    background: var(--background-gray);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin-bottom: var(--space-md);
+    line-height: 1.6;
+    font-size: var(--font-size-sm);
+    color: var(--text-primary);
+    min-height: 60px;
+}
+
+.ai-summary-placeholder {
+    color: var(--text-muted);
+    font-style: italic;
+    text-align: center;
+    padding: var(--space-lg);
+    background: var(--background-gray);
+    border: 1px dashed var(--border-color);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--space-md);
+    font-size: var(--font-size-sm);
+}
+
+.ai-summary-actions {
+    display: flex;
+    gap: var(--space-sm);
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ai-generate-btn {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.ai-generate-btn:hover:not(:disabled) {
+    background: var(--primary-color);
+    transform: translateY(-1px);
+}
+
+.ai-generate-btn:disabled {
+    background: var(--text-muted);
+    cursor: not-allowed;
+    transform: none;
+}
+
+.copy-btn {
+    background: var(--background-gray);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: var(--font-size-xs);
+    transition: all var(--transition-fast);
+}
+
+.copy-btn:hover {
+    background: var(--background-light);
+    color: var(--text-primary);
+    border-color: var(--text-secondary);
+}
+
+.ai-loading {
+    display: none;
+    align-items: center;
+    gap: var(--space-xs);
+    color: var(--text-secondary);
+    font-size: var(--font-size-xs);
+}
+
+.ai-loading.active {
+    display: flex;
+}
+
+.spinner {
+    width: 14px;
+    height: 14px;
+    border: 2px solid var(--border-color);
+    border-top: 2px solid var(--secondary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.ai-error {
+    background: #fef2f2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+    padding: var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-xs);
+    margin-top: var(--space-sm);
+    display: none;
+}
+
+.ai-error.active {
+    display: block;
+}
+
+/* Success state for copy button */
+.copy-btn.success {
+    background: #f0f9ff !important;
+    color: #0369a1 !important;
+    border-color: #bae6fd !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .ai-summary-container {
+        margin: var(--space-md) 0;
+        padding: var(--space-md);
+    }
+    
+    .ai-summary-header h3 {
+        font-size: var(--font-size-sm);
+    }
+    
+    .ai-summary-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .ai-generate-btn {
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .copy-btn {
+        width: 100%;
+        text-align: center;
+        padding: var(--space-sm);
+    }
+    
+    .ai-summary-placeholder {
+        padding: var(--space-md);
+        font-size: var(--font-size-xs);
+    }
+}

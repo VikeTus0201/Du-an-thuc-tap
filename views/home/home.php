@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="http://localhost/Thuctap/Project_thuc_tap/assets/css/home/home.css?v=<?= time(); ?>">
+    <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/home/home.css?v=<?= time(); ?>">
 </head>
 
 <body>
@@ -29,13 +29,13 @@
             </div>
             <div class="banner">
                 <div class="slideshow">
-                    <img src="./assets/img/pngegg.png" alt="Slide 1">
-                    <img src="./assets/img/pngegg2.png" alt="Slide 2">
-                    <img src="./assets/img/pngegg4.png" alt="Slide 3">
-                    <!-- <img src="./assets/img/pngegg3.png" alt="Slide 3"> -->
-                    <!-- <img src="./assets/img/pngegg5.png" alt="Slide 3"> -->
-                    <img src="./assets/img/pngegg1.png" alt="Slide 3">
-                    <!-- <img src="./assets/img/pngegg.png" alt="Slide 1 Clone"> Slide lặp -->
+                    <img src="<?= BASE_URL ?>assets/img/pngegg.png" alt="Slide 1">
+                    <img src="<?= BASE_URL ?>assets/img/pngegg2.png" alt="Slide 2">
+                    <img src="<?= BASE_URL ?>assets/img/pngegg4.png" alt="Slide 3">
+                    <!-- <img src="<?= BASE_URL ?>assets/img/pngegg3.png" alt="Slide 3"> -->
+                    <!-- <img src="<?= BASE_URL ?>assets/img/pngegg5.png" alt="Slide 3"> -->
+                    <img src="<?= BASE_URL ?>assets/img/pngegg1.png" alt="Slide 3">
+                    <!-- <img src="<?= BASE_URL ?>assets/img/pngegg.png" alt="Slide 1 Clone"> Slide lặp -->
                 </div>
             </div>
 
@@ -117,7 +117,7 @@
 
     </div>
     <?php require_once './views/layout/footer.php'; ?>
-    <script src="http://localhost/Duan1/Project1_Team4/assets/js/home.js"></script>
+    <script src="<?= BASE_URL ?>assets/js/home.js"></script>
 </body>
 
 </html>

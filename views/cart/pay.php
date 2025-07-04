@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment - PRIME Store</title>
-    <link rel="stylesheet" href="http://localhost/Thuctap/Project_thuc_tap/assets/css/cart/pay.css?v=<?= time(); ?>">
+    <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/cart/pay.css?v=<?= time(); ?>">
 </head>
 
 <body>

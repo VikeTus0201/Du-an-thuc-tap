@@ -7,8 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Orders</title>
-    <link rel="stylesheet" href="http://localhost/Thuctap/Project_thuc_tap/assets/css/cart/my_oders.css?v=<?= time(); ?>">
-    <script src="http://localhost/Thuctap/Project_thuc_tap/assets/js/my_orders.js?v=<?= time(); ?>"></script>
+    <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/cart/my_oders.css?v=<?= time(); ?>">
+    <script src="<?= BASE_URL ?>assets/js/my_orders.js?v=<?= time(); ?>"></script>
 
 
 </head>

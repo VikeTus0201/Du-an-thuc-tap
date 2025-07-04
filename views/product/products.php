@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="http://localhost/Thuctap/Project_thuc_tap/assets/css/product/product.css?v=<?= time(); ?>">
+    <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/product/product.css?v=<?= time(); ?>">
 </head>
 
 <body>
@@ -83,7 +83,7 @@
     </div>
 
     <?php require_once './views/layout/footer.php'; ?>
-    <script src="http://localhost/Thuctap/Project_thuc_tap/assets/js/home.js"></script>
+    <script src="<?= BASE_URL ?>assets/js/home.js"></script>
 </body>
 
 </html>

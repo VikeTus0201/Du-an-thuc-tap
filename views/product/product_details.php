@@ -5,7 +5,8 @@
     <title><?= htmlspecialchars($product['ten_san_pham']); ?> - Product Details</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="http://localhost/Thuctap/Project_thuc_tap/assets/css/product/product_details.css?v=<?= time(); ?>">
+    <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/product/product_details.css?v=<?= time(); ?>">
+    <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/product/ai_summary.css?v=<?= time(); ?>">
 </head>
 
 <body>
@@ -28,6 +29,38 @@
             </h1>
             <div class="price">
                 <?= number_format($product['gia_ban'], 0, ',', '.'); ?> VND
+            </div>
+
+            <!-- AI Summary Section -->
+            <div class="ai-summary-container">
+                <div class="ai-summary-header">
+                    <svg class="ai-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <h3>Tóm tắt AI</h3>
+                </div>
+                
+                <div id="ai-summary-content" class="ai-summary-content" style="display: none;"></div>
+                
+                <div class="ai-summary-placeholder">
+                    AI sẽ tạo tóm tắt thông minh về sản phẩm này dựa trên thông tin chi tiết
+                </div>
+                
+                <div class="ai-summary-actions">
+                    <button id="ai-generate-btn" class="ai-generate-btn">
+                        🤖 Tạo tóm tắt
+                    </button>
+                    <button id="copy-summary-btn" class="copy-btn" style="display: none;">
+                        📋 Sao chép
+                    </button>
+                </div>
+                
+                <div id="ai-loading" class="ai-loading">
+                    <div class="spinner"></div>
+                    <span>Đang xử lý...</span>
+                </div>
+                
+                <div id="ai-error" class="ai-error"></div>
             </div>
 
 
@@ -173,6 +206,9 @@
                 });
         });
     </script>
+
+    <!-- AI Summary Script -->
+    <script src="<?= BASE_URL ?>assets/js/ai_summary.js?v=<?= time(); ?>"></script>
 
 </body>
 
